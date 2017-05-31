@@ -1,0 +1,19 @@
+.copyright {
+  display: block;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      color: #999;
+      font-family: $futura-light;
+      font-size: 16px;
+      text-transform: uppercase;
+
+      &:first-child {
+        margin-right: 11px;
+      }
+    }
+  }
+}

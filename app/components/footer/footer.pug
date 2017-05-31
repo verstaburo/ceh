@@ -1,0 +1,12 @@
+include ../../blocks/copyright/copyright
+include ../../blocks/contacts/contacts
+
+mixin footer()
+  +b('footer').footer
+    +container()
+      +logo().__logo
+      +e('div').box
+        +copyright()
+        +navbar(getData('navbar'))
+        +contacts()
+

@@ -1,0 +1,40 @@
+.index {
+  margin-top: 240px;
+  flex: 1;
+
+  &__box {
+    display: flex;
+    height: 680px;
+    width: 100%;
+    margin: 130px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__img {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+  }
+
+  &__title {
+    flex: 0 0 773px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    p {
+      display: block;
+      width: 162px;
+      height: 162px;
+      border: 10px solid #303030;
+    }
+  }
+
+  &__box_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

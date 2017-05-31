@@ -1,0 +1,15 @@
+include ../../blocks/container/container
+include ../../blocks/logo/logo
+include ../../blocks/navbar/navbar
+include ../../blocks/grid/grid
+
+
+mixin header()
+  +b('header').header()&attributes(attributes)
+     +container()
+        +e('div').__box
+          +logo().__logo
+
+          +e('nav').navbar
+            +navbar(getData('navbar'))
+

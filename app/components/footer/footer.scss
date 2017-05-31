@@ -1,0 +1,27 @@
+.footer {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  padding: 75px 130px 85px;
+  border-top: 1px solid #333;
+
+  &__logo {
+    width: 190px;
+    margin: 0 auto;
+  }
+
+  &__box {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    width: auto;
+
+    &__link {
+      color: #999;
+    }
+  }
+}
