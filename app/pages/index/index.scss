@@ -13,6 +13,10 @@
       padding: 0;
     }
 
+    &__col_twelve {
+      height: 100%;
+    }
+
     &__col_seven {
       @include screen('laptop') {
         width: 100%;
