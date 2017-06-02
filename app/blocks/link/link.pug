@@ -1,0 +1,8 @@
+mixin link(prev, left, right, next)
+  +b.link&attributes(attributes)
+    +e('a')(href=prev).link-left
+      +e('img').img
+      +e('span').text=left
+    +e('a')(href=next).link-right
+      +e('img').img
+      +e('span').text=right

@@ -1,8 +1,28 @@
 extends ../../layouts/default
 include ../../blocks/image-bg/image-bg
+include ../../blocks/title/title
+include ../../blocks/grid/grid
+include ../../blocks/square-big/square-big
+include ../../blocks/link/link
 
 block head
   - var pageTitle = 'Зал № 3'
 
 block content
   +b.zal3
+    +title('Зал № 3')
+    +grid()
+      +e('div').box
+        +col(7)
+          +e.img
+            +image-bg()(src="assets/images/zal3/photo.jpg" alt='')
+        +col(5)
+          +e.title
+            +e('p').description Идеально подойдет для крупных продакшенов, мероприятий, тренингов, семинаров. Зал с самой большой циклорамой, оснащен отдельной гримеркой, рабочей зоной для ассистентов, продюсеров, стилистов.
+            +e('h3').price Стоимость
+            +square-big('9:00 - 23:00', '1 - 6 человек' ,'1100p', '7-9 человек', '1500p')
+      +e('div').box._img
+        +col(12)
+          +e.img
+            +image-bg()(src="assets/images/zal3/photo1.jpg" alt='')
+      +link('holl.html', 'холл', 'зал № 2', 'zal2.html')

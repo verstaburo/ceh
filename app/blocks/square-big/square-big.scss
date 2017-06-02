@@ -1,0 +1,226 @@
+.square-big {
+  width: 418px;
+  display: flex;
+  align-items: center;
+
+  @include screen('desktop') {
+    width: 380px;
+  }
+
+  @include screen('laptop') {
+    width: 360px;
+  }
+
+  @include screen('tablet') {
+    width: 320px;
+  }
+
+  @include screen('mobile') {
+    width: 270px;
+  }
+
+  &__link {
+    display: block;
+    min-height: 318px;
+    min-width: 418px;
+    position: relative;
+
+    @include screen('desktop') {
+      min-width: 380px;
+    }
+
+    @include screen('laptop') {
+      min-width: 360px;
+    }
+
+    @include screen('tablet') {
+      min-width: 320px;
+    }
+
+    @include screen('mobile') {
+      min-height: 258px;
+      min-width: 270px;
+    }
+  }
+
+  &__text-box {
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__corners {
+
+    &_top {
+      width: 418px;
+      height: 99px;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include screen('desktop') {
+        width: 380px;
+      }
+
+      @include screen('laptop') {
+        width: 360px;
+      }
+
+      @include screen('tablet') {
+        width: 320px;
+      }
+
+      @include screen('mobile') {
+        width: 270px;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 99px;
+        height: 99px;
+        border-top: 8px solid #303030;
+        border-left: 8px solid #303030;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 99px;
+        height: 99px;
+        border-top: 8px solid #303030;
+        border-right: 8px solid #303030;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &_bottom {
+      height: 99px;
+      width: 418px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include screen('desktop') {
+        width: 380px;
+      }
+
+      @include screen('laptop') {
+        width: 360px;
+      }
+
+      @include screen('tablet') {
+        width: 320px;
+      }
+
+      @include screen('mobile') {
+        width: 270px;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 99px;
+        height: 99px;
+        border-bottom: 8px solid #303030;
+        border-left: 8px solid #303030;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 99px;
+        height: 99px;
+        border-bottom: 8px solid #303030;
+        border-right: 8px solid #303030;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__time {
+    font-size: 21.328px;
+    font-family: $futura-light;
+    color: $color-light-black;
+    letter-spacing: .15em;
+    margin-bottom: 60px;
+    display: block;
+
+    @include screen('mobile') {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__quantity {
+    display: flex;
+    justify-content: space-between;
+    min-width: 285px;
+    margin: 60px auto;
+
+    @include screen('mobile') {
+      min-width: 240px;
+      margin: 40px auto;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__human1 {
+    font-size: 21.328px;
+    font-family: $futura-light;
+    color: $color-light-black;
+    letter-spacing: .15em;
+
+    @include screen('mobile') {
+      font-size: 18px;
+    }
+  }
+
+  &__amount1 {
+    font-size: 25px;
+    font-family: $futura-medium;
+    color: $color-light-black;
+    letter-spacing: .2em;
+
+    @include screen('mobile') {
+      font-size: 20px;
+    }
+  }
+
+  &__human2 {
+    font-size: 21.328px;
+    font-family: $futura-light;
+    color: $color-light-black;
+    letter-spacing: .15em;
+
+    @include screen('mobile') {
+      font-size: 18px;
+    }
+  }
+
+  &__amount2 {
+    font-size: 25px;
+    font-family: $futura-medium;
+    color: $color-light-black;
+    letter-spacing: .2em;
+
+    @include screen('mobile') {
+      font-size: 20px;
+    }
+  }
+}

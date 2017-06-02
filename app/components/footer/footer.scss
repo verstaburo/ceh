@@ -11,7 +11,7 @@
   }
 
   @include screen('desktop') {
-    padding: 55px 0 55px !important;
+    padding: 55px 0 !important;
   }
 
   @include screen('laptop') {
@@ -40,7 +40,6 @@
 
     &__item {
       @include screen('desktop') {
-
         padding: 20px 0;
 
         &:first-child {
@@ -54,7 +53,12 @@
     }
 
     &__link {
-      color: #999;
+      color: $color-grey;
+      transition: color .25s ease-in-out;
+
+      &:hover {
+        color: $color-light-black;
+      }
     }
   }
 }

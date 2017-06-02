@@ -1,0 +1,47 @@
+.title {
+  padding: 105px 0;
+  width: 100%;
+  display: block;
+
+  @include screen('desktop') {
+    padding: 70px 0;
+  }
+
+  @include screen('laptop') {
+    padding: 55px 0;
+  }
+
+  @include screen('tablet') {
+    padding: 35px 0;
+  }
+
+  @include screen('mobile') {
+    padding: 25px 0;
+  }
+
+  &__title {
+    font-size: 45px;
+    font-family: $futura-medium;
+    letter-spacing: .7em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-black;
+
+    @include screen('desktop') {
+      font-size: 40px;
+    }
+
+    @include screen('laptop') {
+      font-size: 38px;
+    }
+
+    @include screen('tablet') {
+      font-size: 34px;
+    }
+
+    @include screen('mobile') {
+      font-size: 30px;
+      padding-left: 20px;
+    }
+  }
+}

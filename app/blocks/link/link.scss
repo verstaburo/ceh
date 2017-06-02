@@ -1,0 +1,61 @@
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 125px;
+
+  @include screen('desktop') {
+    padding: 60px 100px;
+  }
+
+  @include screen('laptop') {
+    padding: 55px;
+  }
+
+  @include screen('tablet') {
+    padding: 45px 15px;
+  }
+
+  @include screen('mobile') {
+    padding: 40px 15px;
+  }
+
+  &__link-left {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__link-right {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__text {
+    font-size: 30px;
+    font-family: $futura-light;
+    color: $color-light-black;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    transition: color .25s ease-in-out;
+
+    @include screen('desktop') {
+      font-size: 28px;
+    }
+
+    @include screen('laptop') {
+      font-size: 24px;
+    }
+
+    @include screen('tablet') {
+      font-size: 20px;
+    }
+
+    @include screen('mobile') {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: $color-grey;
+    }
+  }
+}

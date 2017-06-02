@@ -1,3 +1,156 @@
 .zal3 {
   flex: 1;
+
+  .grid {
+
+    &__col_twelve {
+      height: 100%;
+    }
+
+    &__col_seven {
+      @include screen('laptop') {
+        width: 100%;
+      }
+    }
+
+    &__col_five {
+      @include screen('laptop') {
+        width: 100%;
+      }
+    }
+
+    &__img {
+      position: relative;
+    }
+
+    &__box {
+      display: flex;
+      height: 680px;
+      width: 100%;
+      margin: 65px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      @include screen('desktop') {
+        height: 530px;
+      }
+
+      @include screen('laptop') {
+        flex-direction: column;
+        height: auto;
+        margin: 20px 0;
+      }
+
+      @include screen('tablet') {
+        height: auto;
+      }
+
+      @include screen('mobile') {
+        height: auto;
+      }
+    }
+
+    &__box_img {
+      height: 834px;
+      width: 100%;
+
+      @include screen('desktop') {
+        //height: 650px;
+      }
+
+      @include screen('laptop') {
+        //height: 430px;
+      }
+
+      @include screen('tablet') {
+        //height: 310px;
+      }
+
+      @include screen('mobile') {
+        //height: 210px;
+      }
+
+      .grid__img {
+        position: relative;
+        height: 834px;
+
+        @include screen('desktop') {
+          height: 550px;
+        }
+
+        @include screen('laptop') {
+          height: 500px;
+        }
+
+        @include screen('tablet') {
+          height: 450px;
+        }
+
+        @include screen('mobile') {
+          height: 400px;
+        }
+      }
+    }
+
+    &__img {
+      position: relative;
+      height: 680px;
+
+      @include screen('desktop') {
+        height: 550px;
+      }
+
+      @include screen('laptop') {
+        height: 500px;
+      }
+
+      @include screen('tablet') {
+        height: 450px;
+      }
+
+      @include screen('mobile') {
+        height: 400px;
+      }
+    }
+
+    &__title {
+      justify-content: flex-end;
+      align-items: center;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+
+      @include screen('laptop') {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__price {
+      font-size: 21.328px;
+      font-family: $futura-medium;
+      color: $color-light-black;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+    }
+
+    &__description {
+      font-size: 24px;
+      font-family: $futura-light;
+      color: $color-light-black;
+      line-height: 1.708;
+      text-align: center;
+      max-width: 615px;
+      margin-bottom: 40px;
+      padding: 0 10px;
+
+      @include screen('laptop') {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding: 0 25px;
+      }
+    }
+  }
 }

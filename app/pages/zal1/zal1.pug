@@ -1,8 +1,29 @@
 extends ../../layouts/default
 include ../../blocks/image-bg/image-bg
+include ../../blocks/title/title
+include ../../blocks/grid/grid
+include ../../blocks/square-big/square-big
+include ../../blocks/link/link
 
 block head
   - var pageTitle = 'Зал № 1'
 
 block content
   +b.zal1
+    +title('Зал № 1')
+    +grid()
+      +e('div').box
+        +col(7)
+          +e.img
+            +image-bg()(src="assets/images/zal1/photo.jpg" alt='')
+        +col(5)
+          +e.title
+            +e('p').description Зал для предметной съемки и бодиарта оснащен кафельным полом и стенами.
+            +e('h3').price Стоимость
+            +square-big('9:00 - 23:00', '1 - 6 человек' ,'1100p', '7-9 человек', '1500p')
+      +e('div').box._img
+        +col(12)
+          +e.img
+            +image-bg()(src="assets/images/zal1/photo1.jpg" alt='')
+      +link('holl.html', 'холл', 'зал № 2', 'zal2.html')
+
