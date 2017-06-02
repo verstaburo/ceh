@@ -3,6 +3,23 @@
   opacity: 1;
   will-change: opacity;
   transition: opacity .25s ease-in-out;
+  width: 190px;
+
+  @include screen('desktop') {
+    width: 140px;
+  }
+
+  @include screen('laptop') {
+    width: 130px;
+  }
+
+  @include screen('tablet') {
+    width: 120px;
+  }
+
+  @include screen('mobile') {
+    width: 100px;
+  }
 
   &:hover {
     opacity: .75;

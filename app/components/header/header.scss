@@ -4,6 +4,19 @@
   padding: 0 130px;
   background-color: #fff;
   width: 100%;
+  border-bottom: 1px solid #333;
+
+  @include screen('large-desktop') {
+    padding: 0 100px;
+  }
+
+  @include screen('desktop') {
+    padding: 0 50px !important;
+  }
+
+  @include screen('laptop') {
+    height: 190px;
+  }
 
   &__box {
     display: flex;
@@ -11,14 +24,37 @@
     justify-content: space-between;
     height: 240px;
     align-items: center;
+
+    @include screen('laptop') {
+      height: 190px;
+    }
   }
 
   &__logo {
     width: 193px;
-    height: 170px;
   }
 
   &__navbar {
     display: block;
+
+    .navbar {
+      @include screen('desktop') {
+        flex-direction: row;
+      }
+
+      @include screen('laptop') {
+        display: none;
+      }
+
+      &__item {
+        @include screen('desktop') {
+          margin-left: 30px;
+
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
 }

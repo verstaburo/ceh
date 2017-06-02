@@ -1,10 +1,14 @@
 .contacts {
   display: flex;
 
+  @include screen('desktop') {
+    margin-bottom: 30px;
+  }
+
   p {
     display: inline-flex;
     color: #999;
-    font-family: $futura-light;
+    letter-spacing: .128em;
     font-size: 16px;
 
     &:first-child::after {
@@ -14,6 +18,10 @@
       height: 16px;
       background: #9a9a9a;
       margin: 0 23px;
+
+      @include screen('laptop') {
+        margin: 0 10px;
+      }
     }
   }
 }

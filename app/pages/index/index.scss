@@ -1,40 +1,118 @@
 .index {
-  margin-top: 240px;
   flex: 1;
 
-  &__box {
-    display: flex;
-    height: 680px;
-    width: 100%;
-    margin: 130px 0;
+  .grid {
+    margin-left: 0;
+    margin-right: 0;
 
-    &:first-child {
+    &:first-of-type {
       margin-top: 0;
     }
-  }
 
-  &__img {
-    position: relative;
-    height: 100%;
-    flex-grow: 1;
-  }
-
-  &__title {
-    flex: 0 0 773px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-    p {
-      display: block;
-      width: 162px;
-      height: 162px;
-      border: 10px solid #303030;
+    &__col {
+      padding: 0;
     }
-  }
 
-  &__box_reverse {
-    display: flex;
-    flex-direction: row-reverse;
+    &__col_seven {
+      @include screen('laptop') {
+        width: 100%;
+      }
+    }
+
+    &__col_five {
+      @include screen('laptop') {
+        width: 100%;
+      }
+    }
+
+    .main-slider {
+      margin-bottom: 65px;
+
+      @include screen('laptop') {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__box {
+      display: flex;
+      height: 680px;
+      width: 100%;
+      margin: 65px 0;
+
+      @include screen('desktop') {
+        height: 530px;
+      }
+
+      @include screen('laptop') {
+        flex-direction: column-reverse;
+        height: auto;
+        margin: 20px 0;
+      }
+
+      @include screen('tablet') {
+        height: auto;
+      }
+
+      @include screen('mobile') {
+        height: auto;
+      }
+    }
+
+    &__map {
+      height: 680px;
+
+      @include screen('desktop') {
+        height: 530px;
+      }
+
+      @include screen('laptop') {
+        height: 350px;
+      }
+
+      @include screen('tablet') {
+        height: 255px;
+      }
+
+      @include screen('mobile') {
+        height: 170px;
+      }
+    }
+
+    &__img {
+      position: relative;
+      height: 680px;
+
+      @include screen('desktop') {
+        height: 530px;
+      }
+
+      @include screen('laptop') {
+        height: 350px;
+      }
+
+      @include screen('tablet') {
+        height: 255px;
+      }
+
+      @include screen('mobile') {
+        height: 170px;
+      }
+    }
+
+    &__title {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: 100%;
+
+      @include screen('laptop') {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__box_reverse {
+      display: flex;
+      flex-direction: row-reverse;
+    }
   }
 }

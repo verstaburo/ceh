@@ -1,0 +1,10 @@
+mixin main-slider()
+  +b.main-slider.swiper-container
+    +e.swiper-pagination
+    +e.wrapper.swiper-wrapper
+      +e('a')(href='#').slide.swiper-slide
+        +e('img').img(src='assets/images/index/banner-1.jpg')
+      +e('a')(href='#').slide.swiper-slide
+        +e('img').img(src='assets/images/index/banner-2.jpg')
+      +e('a')(href='#').slide.swiper-slide
+        +e('img').img(src='assets/images/index/banner-3.jpg')

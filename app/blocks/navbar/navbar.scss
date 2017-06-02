@@ -5,8 +5,21 @@
   margin: 0;
   padding: 0;
 
+  @include screen('desktop') {
+    align-items: center;
+    flex-direction: column;
+  }
+
   &__item {
     margin-right: 68px;
+
+    @include screen('large-desktop') {
+      margin-right: 40px;
+    }
+
+    @include screen('desktop') {
+      margin-right: 0 !important;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -16,6 +29,7 @@
   &__link {
     color: #333;
     font-size: 16px;
+    letter-spacing: .2em;
     font-weight: 300;
     text-transform: uppercase;
     text-decoration: none;

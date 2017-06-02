@@ -1,0 +1,180 @@
+.square {
+  width: 162px;
+  display: flex;
+  align-items: center;
+
+  @include screen('desktop') {
+    width: 152px;
+  }
+
+  @include screen('laptop') {
+    width: 142px;
+  }
+
+  @include screen('tablet') {
+    width: 132px;
+  }
+
+  @include screen('mobile') {
+    width: 122px;
+  }
+
+  &__link {
+    display: block;
+    min-height: 162px;
+    position: relative;
+
+    @include screen('desktop') {
+      height: 152px;
+      min-height: 152px;
+    }
+
+    @include screen('laptop') {
+      height: 142px;
+      min-height: 142px;
+    }
+
+    @include screen('tablet') {
+      height: 132px;
+      min-height: 132px;
+    }
+
+    @include screen('mobile') {
+      height: 122px;
+      min-height: 122px;
+    }
+  }
+
+  &__text {
+    color: #333;
+    font-family: $futura-demi;
+    font-size: 30px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    position: absolute;
+    min-width: 310px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-74px, -50%);
+
+    @include screen('desktop') {
+      font-size: 24px;
+      transform: translate(-79px, -50%);
+    }
+
+    @include screen('laptop') {
+      font-size: 22px;
+      transform: translate(-84px, -50%);
+    }
+
+    @include screen('tablet') {
+      font-size: 20px;
+      transform: translate(-89px, -50%);
+    }
+
+    @include screen('mobile') {
+      font-size: 18px;
+      transform: translate(-94px, -50%);
+    }
+  }
+
+  &__corners {
+
+    &_top {
+      width: 162px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include screen('desktop') {
+        width: 152px;
+      }
+
+      @include screen('laptop') {
+        width: 142px;
+      }
+
+      @include screen('tablet') {
+        width: 132px;
+      }
+
+      @include screen('mobile') {
+        width: 122px;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-top: 10px solid #303030;
+        border-left: 10px solid #303030;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-top: 10px solid #303030;
+        border-right: 10px solid #303030;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &_bottom {
+      height: 40px;
+      width: 162px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include screen('desktop') {
+        width: 152px;
+      }
+
+      @include screen('laptop') {
+        width: 142px;
+      }
+
+      @include screen('tablet') {
+        width: 132px;
+      }
+
+      @include screen('mobile') {
+        width: 122px;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-bottom: 10px solid #303030;
+        border-left: 10px solid #303030;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-bottom: 10px solid #303030;
+        border-right: 10px solid #303030;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

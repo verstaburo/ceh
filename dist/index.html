@@ -8,7 +8,7 @@
     <title>Главная</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link href="favicon.ico" rel="shortcut icon">
+    <link href="favicon.ico?v=2" rel="shortcut icon">
     <link href="assets/styles/app.min.css" rel="stylesheet">
 </head>
 
@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="header__box">
                     <a class="logo header__logo" href="#">
-                        <img class="logo__image" src="assets/images/logo.png" alt="" role="presentation" />
+                        <img class="logo__image" src="assets/images/logo.svg" alt="" role="presentation" />
                     </a>
                     <nav class="header__navbar">
                         <ul class="navbar">
@@ -43,45 +43,93 @@
             </div>
         </header>
         <div class="index">
-            <div class="index__box">
-                <div class="index__img">
-                    <div class="image-bg">
-                        <img class="image-bg__img" alt="" src="assets/images/index/photo1.jpg" role="presentation" />
+            <div class="grid">
+                <div class="main-slider swiper-container">
+                    <div class="main-slider__swiper-pagination"></div>
+                    <div class="main-slider__wrapper swiper-wrapper">
+                        <a class="main-slider__slide swiper-slide" href="#">
+                            <img class="main-slider__img" src="assets/images/index/banner-1.jpg" alt="" role="presentation" />
+                        </a>
+                        <a class="main-slider__slide swiper-slide" href="#">
+                            <img class="main-slider__img" src="assets/images/index/banner-2.jpg" alt="" role="presentation" />
+                        </a>
+                        <a class="main-slider__slide swiper-slide" href="#">
+                            <img class="main-slider__img" src="assets/images/index/banner-3.jpg" alt="" role="presentation" />
+                        </a>
                     </div>
                 </div>
-                <div class="index__title">
-                    <p></p>
-                </div>
-            </div>
-            <div class="index__box index__box_reverse">
-                <div class="index__img">
-                    <div class="image-bg">
-                        <img class="image-bg__img" alt="" src="assets/images/index/photo2.jpg" role="presentation" />
+                <div class="grid__box">
+                    <div class="grid__col grid__col_seven">
+                        <div class="grid__img">
+                            <div class="image-bg">
+                                <img class="image-bg__img" alt="" src="assets/images/index/photo1.jpg" role="presentation" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__col grid__col_five">
+                        <div class="grid__title">
+                            <div class="square">
+                                <a href="#" class="square__link">
+                                    <span class="square__corners square__corners_top"></span>
+                                    <span class="square__corners square__corners_bottom"></span>
+                                    <p class="square__text">залы</p>
+                                </a href="#">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="index__title">
-                    <p></p>
-                </div>
-            </div>
-            <div class="index__box">
-                <div class="index__img">
-                    <div class="image-bg">
-                        <img class="image-bg__img" alt="" src="assets/images/index/photo3.jpg" role="presentation" />
+                <div class="grid__box grid__box_reverse">
+                    <div class="grid__col grid__col_seven">
+                        <div class="grid__img">
+                            <div class="image-bg">
+                                <img class="image-bg__img" alt="" src="assets/images/index/photo2.jpg" role="presentation" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__col grid__col_five">
+                        <div class="grid__title">
+                            <div class="square">
+                                <a href="#" class="square__link">
+                                    <span class="square__corners square__corners_top"></span>
+                                    <span class="square__corners square__corners_bottom"></span>
+                                    <p class="square__text">оборудование</p>
+                                </a href="#">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="index__title">
-                    <p></p>
+                <div class="grid__box">
+                    <div class="grid__col grid__col_seven">
+                        <div class="grid__img">
+                            <div class="image-bg">
+                                <img class="image-bg__img" alt="" src="assets/images/index/photo3.jpg" role="presentation" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__col grid__col_five">
+                        <div class="grid__title">
+                            <div class="square">
+                                <a href="#" class="square__link">
+                                    <span class="square__corners square__corners_top"></span>
+                                    <span class="square__corners square__corners_bottom"></span>
+                                    <p class="square__text">цены</p>
+                                </a href="#">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="index__box index__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.0491242976686!2d37.54824715869078!3d55.732215470606164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b93865a2305%3A0x511ee91d49beaee9!2z0JHQtdGA0LXQttC60L7QstGB0LrQsNGPINC90LDQsS4sIDIwLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTIxMDU5!5e0!3m2!1sru!2sua!4v1496264382809"
-                    width="100%" height="680px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="grid__box grid__map">
+                    <div class="grid__col grid__col_twelve">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.0491242976686!2d37.54824715869078!3d55.732215470606164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b93865a2305%3A0x511ee91d49beaee9!2z0JHQtdGA0LXQttC60L7QstGB0LrQsNGPINC90LDQsS4sIDIwLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTIxMDU5!5e0!3m2!1sru!2sua!4v1496264382809"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="footer">
             <div class="container">
                 <a class="logo footer__logo" href="#">
-                    <img class="logo__image" src="assets/images/logo.png" alt="" role="presentation" />
+                    <img class="logo__image" src="assets/images/logo.svg" alt="" role="presentation" />
                 </a>
                 <div class="footer__box">
                     <div class="copyright">

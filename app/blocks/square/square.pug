@@ -1,0 +1,7 @@
+mixin square(text)
+  +b.square&attributes(attributes)
+    +e('a href="#"').link
+      +e('span').corners._top
+      +e('span').corners._bottom
+      +e('p').text=text
+        block
