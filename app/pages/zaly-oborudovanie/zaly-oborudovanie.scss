@@ -21,7 +21,7 @@
 
     &__box {
       display: flex;
-      height: 680px;
+      height: auto;
       width: 100%;
       margin: 65px 0;
 
@@ -30,11 +30,11 @@
       }
 
       @include screen('desktop') {
-        height: 530px;
+        height: auto;
       }
 
       @include screen('laptop') {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: auto;
         margin: 20px 0;
       }
@@ -46,6 +46,10 @@
       @include screen('mobile') {
         height: auto;
       }
+    }
+
+    .box_reverse {
+      flex-direction: column;
     }
 
     &__img {
@@ -74,9 +78,42 @@
       align-items: center;
       display: flex;
       height: 100%;
+      padding: 0 130px;
+      flex-direction: column;
+
+      @include screen('desktop') {
+        padding: 0 15px;
+      }
 
       @include screen('laptop') {
         margin-bottom: 40px;
+      }
+    }
+
+    &__description {
+      font-size: 24px;
+      font-family: $futura-light;
+      color: $color-light-black;
+      line-height: 1.708;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    &__list {
+      padding: 0;
+      margin-top: 60px;
+    }
+
+    &__item {
+      font-size: 24px;
+      font-family: $futura-light;
+      color: $color-light-black;
+      line-height: 1.708;
+    }
+
+    .title_border {
+      @include screen('laptop') {
+        border-bottom: 1px solid $color-light-black;
       }
     }
   }

@@ -17,6 +17,7 @@
 
   @include screen('mobile') {
     padding: 25px 0;
+    margin-bottom: 30px;
   }
 
   &__title {
