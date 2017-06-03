@@ -2,12 +2,6 @@
   flex: 1;
 
   .grid {
-    margin-left: 0;
-    margin-right: 0;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
 
     &__col {
       padding: 0;
@@ -66,19 +60,19 @@
       height: 680px;
 
       @include screen('desktop') {
-        height: 530px;
+        height: 550px;
       }
 
       @include screen('laptop') {
-        height: 350px;
+        height: 500px;
       }
 
       @include screen('tablet') {
-        height: 255px;
+        height: 450px;
       }
 
       @include screen('mobile') {
-        height: 170px;
+        height: 400px;
       }
     }
 
@@ -87,19 +81,19 @@
       height: 680px;
 
       @include screen('desktop') {
-        height: 530px;
+        height: 550px;
       }
 
       @include screen('laptop') {
-        height: 350px;
+        height: 500px;
       }
 
       @include screen('tablet') {
-        height: 255px;
+        height: 450px;
       }
 
       @include screen('mobile') {
-        height: 170px;
+        height: 400px;
       }
     }
 

@@ -18,11 +18,8 @@
   font-style: normal;
   font-weight: 300;
   src:
-    //local('Futura PT Web Light'),
-    //local('Futura-PT-Web-Light'),
     local('FuturaPT-Light'),
     local('FuturaPT Light'),
-    //url('../fonts/Futura PT Web Light.ttf') format('ttf');
     url('../fonts/FuturaPT-Light.eot') format('embedded-opentype'),
     url('../fonts/FuturaPT-Light.woff') format('woff'),
     url('../fonts/FuturaPT-Light.ttf') format('ttf'),
@@ -34,11 +31,8 @@
   font-style: normal;
   font-weight: 500;
   src:
-    //local('Futura PT Web Medium'),
-    //local('Futura-PT-Web-Medium'),
     local('FuturaPT-Medium'),
     local('FuturaPT Medium'),
-    //url('../fonts/Futura PT Web Medium.ttf') format('ttf');
     url('../fonts/FuturaPT-Medium.eot') format('embedded-opentype'),
     url('../fonts/FuturaPT-Medium.woff') format('woff'),
     url('../fonts/FuturaPT-Medium.ttf') format('ttf'),
@@ -50,15 +44,25 @@
   font-style: normal;
   font-weight: 600;
   src:
-    //local('Futura PT Web Medium'),
-    //local('Futura-PT-Web-Medium'),
     local('FuturaPT-Demi'),
     local('FuturaPT Demi'),
-    //url('../fonts/Futura PT Web Medium.ttf') format('ttf');
     url('../fonts/FuturaPT-Demi.eot') format('embedded-opentype'),
     url('../fonts/FuturaPT-Demi.woff') format('woff'),
     url('../fonts/FuturaPT-Demi.ttf') format('ttf'),
     url('../fonts/FuturaPT-Demi.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'FuturaPT-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('FuturaPT-Bold'),
+    local('FuturaPT Bold'),
+    url('../fonts/FuturaPT-Bold.eot') format('embedded-opentype'),
+    url('../fonts/FuturaPT-Bold.woff') format('woff'),
+    url('../fonts/FuturaPT-Bold.ttf') format('ttf'),
+    url('../fonts/FuturaPT-Bold.svg') format('svg');
 }
 
 /* Соответствие письменного названия жирности числовому значению

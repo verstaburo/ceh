@@ -1,3 +1,89 @@
 .pravila {
   flex: 1;
+
+  .grid {
+
+    &__col {
+      padding: 0;
+    }
+
+    &__col_seven {
+      @include screen('laptop') {
+        width: 100%;
+      }
+    }
+
+    &__col_five {
+      @include screen('laptop') {
+        display: none;
+      }
+    }
+
+    &__box {
+      width: 100%;
+      //min-height: 350px;
+      height: 100%;
+      display: flex;
+
+      @include screen('laptop') {
+        flex-direction: column;
+      }
+    }
+
+    &__number {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      @include screen('laptop') {
+        display: none;
+      }
+
+      p {
+        font-size: 471.617px;
+        font-family: $futura-bold;
+        color: $color-light-grey;
+        line-height: .68;
+      }
+    }
+
+    &__list {
+      list-style-type: none;
+      padding: 0;
+
+      @include screen('laptop') {
+        padding: 0 15px;
+      }
+    }
+
+    &__item {
+      font-size: 21px;
+      font-family: $futura-light;
+      color: $color-light-black;
+      line-height: 1.619;
+
+      span {
+        font-family: $futura-medium;
+      }
+    }
+
+    .box__padding {
+
+      &_right {
+        padding-right: 205px;
+
+        @include screen('laptop') {
+          padding: 0;
+        }
+      }
+
+      &_left {
+        padding-left: 130px;
+
+        @include screen('laptop') {
+          padding: 0;
+        }
+      }
+    }
+  }
 }

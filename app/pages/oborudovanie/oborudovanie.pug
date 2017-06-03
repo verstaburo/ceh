@@ -1,8 +1,53 @@
 extends ../../layouts/default
 include ../../blocks/image-bg/image-bg
+include ../../blocks/title/title
+include ../../blocks/grid/grid
+include ../../blocks/square/square
 
 block head
   - var pageTitle = 'Оборудование'
 
 block content
   +b.oborudovanie
+    +title('Оборудование')
+    +grid()
+      +e('div').box
+        +col(7)
+          +e.img
+            +image-bg()(src="assets/images/oborudovanie/photo1.jpg" alt='')
+        +col(5)
+          +e.title
+            +square('FALCON EYES')
+
+      +e('div').box
+        +col(5)
+          +e.title
+            +square('PROFOTO')
+        +col(7)
+          +e.img
+            +image-bg()(src="assets/images/oborudovanie/photo2.jpg" alt='')
+
+      +e('div').box
+        +col(7)
+          +e.img
+            +image-bg()(src="assets/images/oborudovanie/photo3.jpg" alt='')
+        +col(5)
+          +e.title
+            +square('KUPO')
+
+      +e('div').box
+        +col(7)
+          +e.title
+            +square('СИСТЕМЫ УСТАНОВКИ ФОНА')
+        +col(5)
+          +e.img
+            +image-bg()(src="assets/images/oborudovanie/photo4.jpg" alt='')
+
+      +e('div').box
+        +col(5)
+          +e.img
+            +image-bg()(src="assets/images/oborudovanie/photo5.jpg" alt='')
+        +col(7)
+          +e.title
+            +square('КОМПЛЕКТЫ ПОСТОЯННОГО СВЕТА')
+

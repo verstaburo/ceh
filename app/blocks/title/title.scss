@@ -26,6 +26,7 @@
     text-transform: uppercase;
     text-align: center;
     color: $color-black;
+    line-height: 1.5;
 
     @include screen('desktop') {
       font-size: 40px;
@@ -43,5 +44,9 @@
       font-size: 30px;
       padding-left: 20px;
     }
+  }
+
+  &_border {
+    border-top: 1px solid $color-light-black;
   }
 }
