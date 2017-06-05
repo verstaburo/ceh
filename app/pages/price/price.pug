@@ -1,8 +1,115 @@
 extends ../../layouts/default
 include ../../blocks/image-bg/image-bg
+include ../../blocks/title/title
+include ../../blocks/grid/grid
+include ../../blocks/container/container
+include ../../blocks/square/square
+include ../../blocks/square-big/square-big
 
 block head
   - var pageTitle = 'Прайс'
 
 block content
   +b.price
+    +title('Прайс')
+    +container()
+      +e('ul').list
+        +e('li').item Время
+        +e('li').item Количество человек
+        +e('li').item Цена в час
+        +e('li').item Зал
+
+      +e('div').box
+        +e('div').box__time
+          +e('ul').box__time-list
+            +e('li').box__time-item 9:00-23:00
+        +e('div').box__quantity
+          +e('ul').box__quantity-list
+            +e('li').box__quantity-item 1 - 6
+            +e('li').box__quantity-item 7 - 9
+        +e('div').box__price
+          +e('ul').box__price-list
+            +e('li').box__price-item 1100P
+            +e('li').box__price-item 1500P
+        +e('div').box__hall
+          +e('ul').box__price-list
+            +e('li').box__price-item
+              +square('холл')
+
+      +e('div').box
+        +e('div').box__time
+          +e('ul').box__time-list
+            +e('li').box__time-item 9:00-23:00
+        +e('div').box__quantity
+          +e('ul').box__quantity-list
+            +e('li').box__quantity-item 1 - 6
+            +e('li').box__quantity-item 7 - 9
+        +e('div').box__price
+          +e('ul').box__price-list
+            +e('li').box__price-item 1100P
+            +e('li').box__price-item 1500P
+        +e('div').box__hall
+          +e('ul').box__price-list
+            +e('li').box__price-item
+              +square('зал № 1')
+
+      +e('div').box
+        +e('div').box__time
+          +e('ul').box__time-list
+            +e('li').box__time-item 9:00-23:00
+        +e('div').box__quantity
+          +e('ul').box__quantity-list
+            +e('li').box__quantity-item 1 - 6
+            +e('li').box__quantity-item 7 - 9
+        +e('div').box__price
+          +e('ul').box__price-list
+            +e('li').box__price-item 1100P
+            +e('li').box__price-item 1500P
+        +e('div').box__hall
+          +e('ul').box__price-list
+            +e('li').box__price-item
+              +square('зал № 2')
+
+      +e('div').box
+        +e('div').box__time
+          +e('ul').box__time-list
+            +e('li').box__time-item 9:00-23:00
+        +e('div').box__quantity
+          +e('ul').box__quantity-list
+            +e('li').box__quantity-item 1 - 6
+            +e('li').box__quantity-item 7 - 9
+            +e('li').box__quantity-item 10 - 19
+        +e('div').box__price
+          +e('ul').box__price-list
+            +e('li').box__price-item 1100P
+            +e('li').box__price-item 1500P
+            +e('li').box__price-item 1900P
+        +e('div').box__hall
+          +e('ul').box__price-list
+            +e('li').box__price-item
+              +square('зал № 3')
+
+      +e('div').box.box__visible.box__hidden
+        +e('div').box__hidden
+          +e('ul').box__hidden-list
+            +e('li').box__hidden-item холл
+            +e('li').box__hidden-item
+              +square-big('9:00 - 23:00', '1 - 6 человек' ,'1100p', '7-9 человек', '1500p')
+            +e('li').box__hidden-item зал №1
+            +e('li').box__hidden-item
+              +square-big('9:00 - 23:00', '1 - 6 человек' ,'1100p', '7-9 человек', '1500p')
+            +e('li').box__hidden-item зал №2
+            +e('li').box__hidden-item
+              +square-big('9:00 - 23:00', '1 - 6 человек' ,'1100p', '7-9 человек', '1500p')
+            +e('li').box__hidden-item зал №3
+            +e('li').box__hidden-item
+              +square-big('9:00 - 23:00', '1 - 6 человек' ,'1100p', '7-9 человек', '1500p', '10-19 человек', '1900р')
+
+      +e('div').box.box__visible
+        +e('div').box__description
+          +e('ul').box__description-list
+            +e('li').box__description-item * на протяжении всей съемки, гримерный стол входит в стоимость аренды зала
+            +e('li').box__description-item * данные расценки распространяются только для проведения съемок, по вопросам организации и расчета стоимости мероприятий обращаться на почту или по телефонам
+            +e('li').box__description-item * если Вам необходима почасовая аренда ночного пакета, стоимость рассчитывается по двойной стоимости аренды зала (при стандартном количестве человек до 10)
+
+

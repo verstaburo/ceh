@@ -49,7 +49,9 @@
     }
 
     .box_reverse {
-      flex-direction: column;
+      @include screen('laptop') {
+        flex-direction: column;
+      }
     }
 
     &__img {

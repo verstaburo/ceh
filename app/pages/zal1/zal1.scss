@@ -152,5 +152,15 @@
         padding: 0 25px;
       }
     }
+
+    .square-big__text-box {
+
+      p {
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
   }
 }

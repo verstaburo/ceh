@@ -22,6 +22,7 @@
   &__link {
     display: block;
     min-height: 318px;
+    height: 100%;
     min-width: 418px;
     position: relative;
 
@@ -38,7 +39,8 @@
     }
 
     @include screen('mobile') {
-      min-height: 258px;
+      //min-height: 258px;
+      height: 100%;
       min-width: 270px;
     }
   }
@@ -50,6 +52,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 54px 0;
   }
 
   &__corners {
@@ -176,6 +179,7 @@
     }
 
     &:last-child {
+      display: none;
       margin-bottom: 0;
     }
   }
@@ -222,5 +226,31 @@
     @include screen('mobile') {
       font-size: 20px;
     }
+  }
+
+  &__human3 {
+    font-size: 21.328px;
+    font-family: $futura-light;
+    color: $color-light-black;
+    letter-spacing: .15em;
+
+    @include screen('mobile') {
+      font-size: 18px;
+    }
+  }
+
+  &__amount3 {
+    font-size: 25px;
+    font-family: $futura-medium;
+    color: $color-light-black;
+    letter-spacing: .2em;
+
+    @include screen('mobile') {
+      font-size: 20px;
+    }
+  }
+
+  .quantity_bottom {
+    margin-bottom: 0;
   }
 }
