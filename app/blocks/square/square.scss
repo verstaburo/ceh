@@ -1,47 +1,54 @@
 .square {
-  width: 162px;
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   @include screen('desktop') {
-    width: 152px;
+    //width: 152px;
   }
 
   @include screen('laptop') {
-    width: 142px;
+    //width: 142px;
   }
 
   @include screen('tablet') {
-    width: 132px;
+    //width: 132px;
   }
 
   @include screen('mobile') {
-    width: 122px;
+    //width: 122px;
   }
 
   &__link {
     display: block;
     min-height: 162px;
-    position: relative;
+    width: 162px;
+    //position: relative;
 
     @include screen('desktop') {
       height: 152px;
       min-height: 152px;
+      width: 152px;
     }
 
     @include screen('laptop') {
       height: 142px;
       min-height: 142px;
+      width: 142px;
     }
 
     @include screen('tablet') {
       height: 132px;
       min-height: 132px;
+      width: 132px;
     }
 
     @include screen('mobile') {
       height: 122px;
       min-height: 122px;
+      width: 122px;
     }
   }
 
@@ -52,30 +59,33 @@
     letter-spacing: .2em;
     text-transform: uppercase;
     position: absolute;
-    min-width: 310px;
     top: 50%;
     left: 50%;
+    width: 100%;
     text-align: center;
-    transform: translate(-74px, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
 
     @include screen('desktop') {
       font-size: 24px;
-      transform: translate(-79px, -50%);
+      //transform: translate(-79px, -50%);
     }
 
     @include screen('laptop') {
       font-size: 22px;
-      transform: translate(-84px, -50%);
+      //transform: translate(-84px, -50%);
     }
 
     @include screen('tablet') {
       font-size: 20px;
-      transform: translate(-89px, -50%);
+      //transform: translate(-89px, -50%);
     }
 
     @include screen('mobile') {
       font-size: 18px;
-      transform: translate(-94px, -50%);
+      //transform: translate(-94px, -50%);
     }
   }
 
@@ -86,7 +96,7 @@
       height: 40px;
       position: absolute;
       top: 0;
-      left: 0;
+      //left: 0;
 
       @include screen('desktop') {
         width: 152px;
@@ -134,7 +144,7 @@
       width: 162px;
       position: absolute;
       bottom: 0;
-      left: 0;
+      //left: 0;
 
       @include screen('desktop') {
         width: 152px;
