@@ -1,0 +1,11 @@
+extends ../../layouts/default
+include ../../blocks/grid/grid
+
+block head
+  - var pageTitle = 'Карта сайта'
+
+block content
+  +b.map
+    +grid()
+      +col(12)
+        +navbar(getData('map'))
