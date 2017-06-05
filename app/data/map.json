@@ -1,42 +1,42 @@
 [
   {
-    "path": "https://verstaburo.github.io/ceh/index.html",
+    "path": "index.html",
     "title": "главная"
   },
   {
-    "path": "https://verstaburo.github.io/ceh/contact.html",
+    "path": "contact.html",
     "title": "контакты"
   },
   {
-    "path": "https://verstaburo.github.io/ceh/holl.html",
+    "path": "holl.html",
     "title": "холл"
   },
   {
-    "path": "https://verstaburo.github.io/ceh/oborudovanie.html",
+    "path": "oborudovanie.html",
     "title": "оборудование"
   },
   {
-    "path": "https://verstaburo.github.io/ceh/pravila.html",
+    "path": "pravila.html",
     "title": "правила"
   },
   {
-    "path": "https://verstaburo.github.io/ceh/price.html",
+    "path": "price.html",
     "title": "прайс"
   },
   {
-    "path": "https://verstaburo.github.io/ceh/zal1.html",
+    "path": "zal1.html",
     "title": "зал № 1"
   },
   {
-    "path": "https://verstaburo.github.io/ceh/zal2.html",
+    "path": "zal2.html",
     "title": "зал № 2"
   },
   {
-    "path": "https://verstaburo.github.io/ceh/zal3.html",
+    "path": "zal3.html",
     "title": "зал № 3"
   },
   {
-    "path": "https://verstaburo.github.io/ceh/zaly-oborudovanie.html",
+    "path": "zaly-oborudovanie.html",
     "title": "съемочные залы"
   }
 ]
