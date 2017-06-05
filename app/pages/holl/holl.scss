@@ -1,5 +1,6 @@
 .holl {
   flex: 1;
+  flex-basis: auto;
 
   .grid {
 
@@ -123,6 +124,7 @@
       flex-direction: column;
 
       @include screen('laptop') {
+        height: auto;
         margin-bottom: 40px;
         margin-top: 60px;
       }
