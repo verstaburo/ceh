@@ -72,6 +72,10 @@
       &:hover {
         color: $color-light-black;
       }
+
+      &:hover::after {
+        width: 0;
+      }
     }
   }
 

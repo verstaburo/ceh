@@ -1,7 +1,7 @@
 [
-  { "path": "#", "title": "Главная" },
-  { "path": "#", "title": "Залы и оборудование" },
-  { "path": "#", "title": "Прайс" },
-  { "path": "#", "title": "Правила" },
-  { "path": "#", "title": "Контакты" }
+  { "path": "index.html", "title": "Главная" },
+  { "path": "zaly-oborudovanie.html", "title": "Залы и оборудование" },
+  { "path": "price.html", "title": "Прайс" },
+  { "path": "pravila.html", "title": "Правила" },
+  { "path": "contact.html", "title": "Контакты" }
 ]
