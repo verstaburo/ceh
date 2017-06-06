@@ -33,10 +33,25 @@
     font-weight: 300;
     text-transform: uppercase;
     text-decoration: none;
-    transition: color .25s ease-in-out;
+    position: relative;
 
-    &:hover {
-      color: $color-grey;
+    &::after {
+      content: " ";
+      position: absolute;
+      bottom: -18px;
+      left: 0;
+      right: 0;
+      width: 0;
+      height: 3px;
+      background-color: $color-light-black;
+      transition: width .25s ease-in-out;
+      margin: 0 auto;
+    }
+
+    &:hover::after {
+      color: $color-light-black;
+      width: 100%;
+      left: 0;
     }
   }
 }

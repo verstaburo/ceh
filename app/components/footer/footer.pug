@@ -1,12 +1,23 @@
 include ../../blocks/copyright/copyright
 include ../../blocks/contacts/contacts
+include ../../blocks/icon/icons
 
 mixin footer()
   +b('footer').footer
     +container()
       +logo().__logo
+      +e('div').socials
+        +e('a href="#"').link__instagram
+          +icon('instagram').instagram
+        +e('a href="#"').link__facebook
+          +icon('facebook').facebook
       +e('div').box
         +copyright()
+        +e('div').socials
+          +e('a href="#"').link__instagram
+            +icon('instagram').instagram
+          +e('a href="#"').link__facebook
+            +icon('facebook').facebook
         +navbar(getData('navbar'))
         +contacts()
 

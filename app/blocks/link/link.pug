@@ -1,8 +1,10 @@
+include ../../blocks/icon/icons
+
 mixin link(prev, left, right, next)
   +b.link&attributes(attributes)
     +e('a')(href=prev).link-left
-      +e('img').img
+      +e('span').__prev #[+icon('prev')]
       +e('span').text=left
     +e('a')(href=next).link-right
-      +e('img').img
+      +e('span').__next #[+icon('next')]
       +e('span').text=right

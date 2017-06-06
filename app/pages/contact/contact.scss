@@ -61,6 +61,8 @@
 
     &__list {
       list-style-type: none;
+      padding: 0 15px;
+      width: 100%;
 
       @include screen('laptop') {
         width: 100%;
@@ -76,6 +78,10 @@
       color: $color-light-black;
       line-height: 1.667;
       letter-spacing: .02em;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: auto;
 
       @include screen('mobile') {
         font-size: 21px;
@@ -103,6 +109,14 @@
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include screen('laptop') {
+          flex-direction: column-reverse;
+          margin-bottom: 30px;
+        }
       }
 
       p {
@@ -132,6 +146,14 @@
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include screen('laptop') {
+          flex-direction: column-reverse;
+          margin-bottom: 30px;
+        }
       }
 
       p {
@@ -189,6 +211,68 @@
 
       @include screen('laptop') {
         margin-bottom: 40px;
+      }
+    }
+
+    &__address {
+      width: 30px;
+      height: 30px;
+      fill: $color-light-black;
+      margin-right: 45px;
+      display: flex;
+
+      @include screen('mobile') {
+        margin-right: 25px;
+      }
+    }
+
+    &__telefon1 {
+      width: 30px;
+      height: 33px;
+      fill: $color-light-black;
+      margin-right: 45px;
+      display: flex;
+
+      @include screen('mobile') {
+        margin-right: 25px;
+      }
+    }
+
+    &__letter {
+      width: 30px;
+      height: 33px;
+      fill: $color-light-black;
+      margin-right: 45px;
+      display: flex;
+
+      @include screen('mobile') {
+        margin-right: 25px;
+      }
+    }
+
+    &__auto {
+      width: 79px;
+      height: 39px;
+      fill: $color-light-black;
+      margin-right: 35px;
+      display: flex;
+
+      @include screen('laptop') {
+        margin-right: 0;
+        margin-top: 30px;
+      }
+    }
+
+    &__transport {
+      width: 80px;
+      height: 44px;
+      fill: $color-light-black;
+      margin-right: 50px;
+      display: flex;
+
+      @include screen('laptop') {
+        margin-right: 0;
+        margin-top: 30px;
       }
     }
   }

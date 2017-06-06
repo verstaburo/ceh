@@ -23,7 +23,7 @@
   }
 
   &__box {
-    margin-top: 85px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,6 +33,16 @@
       align-items: center;
       display: flex;
       flex-direction: column-reverse;
+    }
+
+    .footer__socials {
+      display: none;
+
+      @include screen('desktop') {
+        display: flex;
+        width: auto;
+        margin-top: 30px;
+      }
     }
   }
 
@@ -62,6 +72,40 @@
       &:hover {
         color: $color-light-black;
       }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include screen('desktop') {
+      display: none;
+    }
+  }
+
+  &__instagram {
+    width: 30px;
+    height: 30px;
+    margin-right: 23px;
+    fill: $color-grey;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+      fill: $color-light-black;
+    }
+  }
+
+  &__facebook {
+    width: 30px;
+    height: 30px;
+    fill: $color-grey;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+      fill: $color-light-black;
     }
   }
 }
