@@ -2,6 +2,7 @@ include ../../blocks/container/container
 include ../../blocks/logo/logo
 include ../../blocks/navbar/navbar
 include ../../blocks/grid/grid
+include ../../blocks/icon/icons
 
 
 mixin header()
@@ -9,6 +10,14 @@ mixin header()
      +container()
         +e('div').__box
           +logo().__logo
+
+          +e('div').mobile_menu
+            +e('a href="tel:+7123123123" ').link_tel #[+icon('telefon1')]
+            +e('div').burger
+              +e('div').burger-brick
+              +e('div').burger-brick.middle
+              +e('div').burger-brick
+
 
           +e('nav').navbar
             +navbar(getData('navbar'))

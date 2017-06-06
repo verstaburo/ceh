@@ -11,7 +11,7 @@
   }
 
   @include screen('desktop') {
-    padding: 0 50px !important;
+    padding: 0 15px !important;
   }
 
   @include screen('laptop') {
@@ -37,6 +37,48 @@
   &__navbar {
     display: block;
 
+    @include screen('laptop') {
+      position: absolute;
+      z-index: 1000;
+      top: 190px;
+      //bottom: 0;
+      left: -100%;
+      //right: 0;
+      height: 100%;
+      width: 100%;
+      padding: 0 15px;
+      background: $color-white;
+      transition: all .25s ease-in-out;
+
+      &_visible {
+        left: 0;
+        display: block;
+      }
+
+      .navbar {
+        display: flex !important;
+        flex-direction: column;
+        padding: 0 0 70px;
+        width: 100%;
+      }
+
+      .navbar__item {
+        margin-left: 0;
+        padding: 20px 0;
+        border-bottom: 1px solid $color-light-black;
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar__link {
+        color: $color-light-black;
+
+        &:hover::after {
+          width: 0;
+        }
+      }
+    }
+
     .navbar {
       @include screen('desktop') {
         flex-direction: row;
@@ -54,6 +96,58 @@
             margin-right: 0;
           }
         }
+      }
+    }
+  }
+
+  &__mobile_menu {
+    display: none;
+
+    @include screen('laptop') {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  &__link_tel {
+
+    svg {
+      width: 44px;
+      height: 44px;
+      margin-right: 30px;
+    }
+  }
+
+  .header__burger-brick {
+    height: 4px;
+    background: $color-light-black;
+    margin-top: 10px;
+    transition: .3s ease-out;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .header__burger {
+    width: 40px;
+    cursor: pointer;
+
+    &_open {
+
+      .header__burger-brick:first-child {
+        transform: rotate(45deg);
+        margin-top: 0;
+      }
+
+      .header__burger-brick:last-child {
+        transform: rotate(-45deg);
+        margin-top: -18px;
+      }
+
+      .middle {
+        transform: scale(0);
       }
     }
   }

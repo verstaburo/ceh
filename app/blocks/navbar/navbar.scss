@@ -34,9 +34,10 @@
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
+    display: block;
 
     &::after {
-      content: " ";
+      content: '';
       position: absolute;
       bottom: -18px;
       left: 0;
