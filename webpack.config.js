@@ -13,7 +13,7 @@ module.exports = (watch = false) => ({
   watch,
   devtool: isDebug ? 'cheap-module-inline-source-map' : false,
   module: {
-    rules: [
+    /*rules: [
       {
         enforce: 'pre',
         test: /\.js$/,
@@ -25,7 +25,7 @@ module.exports = (watch = false) => ({
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
-    ],
+    ],*/
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -34,6 +34,6 @@ module.exports = (watch = false) => ({
       },
     }),
     new webpack.NoErrorsPlugin(),
-    !isDebug ? new webpack.optimize.UglifyJsPlugin() : f => f,
+    /*!isDebug ? new webpack.optimize.UglifyJsPlugin() : f => f,*/
   ],
 });
