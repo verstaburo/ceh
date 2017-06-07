@@ -54,5 +54,11 @@
       width: 100%;
       left: 0;
     }
+
+    &:active::after {
+      color: $color-light-black;
+      width: 100%;
+      left: 0;
+    }
   }
 }

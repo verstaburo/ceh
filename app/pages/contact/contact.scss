@@ -62,7 +62,11 @@
     &__list {
       list-style-type: none;
       padding: 0 15px;
-      width: 100%;
+      //width: 100%;
+
+      @include screen('desktop') {
+        width: 100%;
+      }
 
       @include screen('laptop') {
         width: 100%;
@@ -112,10 +116,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: row-reverse;
 
         @include screen('laptop') {
-          flex-direction: column-reverse;
+          flex-direction: column;
           margin-bottom: 30px;
+        }
+
+        @include screen('mobile') {
+          display: block;
+
+          span {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+          }
         }
       }
 
@@ -149,10 +164,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: row-reverse;
 
         @include screen('laptop') {
-          flex-direction: column-reverse;
+          flex-direction: column;
           margin-bottom: 30px;
+        }
+
+        @include screen('mobile') {
+          display: block;
+
+          span {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+          }
         }
       }
 
