@@ -94,6 +94,11 @@
       }
     }
 
+    &__content-zone {
+      display: block;
+      width: 100%;
+    }
+
     &__content-zone ul {
       padding: 0;
       margin-top: 60px;

@@ -95,6 +95,11 @@
       }
     }
 
+    &__content-zone {
+      display: block;
+      width: 100%;
+    }
+
     &__content-zone p {
       font-size: 24px;
       font-family: $futura-light;
