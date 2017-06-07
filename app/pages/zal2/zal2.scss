@@ -26,7 +26,7 @@
 
     &__box {
       display: flex;
-      height: 680px;
+      min-height: 680px;
       width: 100%;
       margin: 65px 0;
 
@@ -35,84 +35,84 @@
       }
 
       @include screen('desktop') {
-        height: auto;
+        min-height: 550px;
       }
 
       @include screen('laptop') {
         flex-direction: column;
-        height: auto;
+        min-height: 500px;
         margin: 20px 0;
       }
 
       @include screen('tablet') {
-        height: auto;
+        min-height: 450px;
       }
 
       @include screen('mobile') {
-        height: auto;
+        min-height: 400px;
       }
     }
 
     &__box_img {
-      height: 834px;
+      min-height: 834px;
       width: 100%;
 
       @include screen('desktop') {
-        //height: 650px;
+        min-height: 550px;
       }
 
       @include screen('laptop') {
-        //height: 430px;
+        min-height: 500px;
       }
 
       @include screen('tablet') {
-        //height: 310px;
+        min-height: 450px;
       }
 
       @include screen('mobile') {
-        //height: 210px;
+        min-height: 400px;
       }
 
       .grid__img {
         position: relative;
-        height: 834px;
+        min-height: 100%;
 
         @include screen('desktop') {
-          height: 550px;
+          //height: 550px;
         }
 
         @include screen('laptop') {
-          height: 500px;
+          //height: 500px;
         }
 
         @include screen('tablet') {
-          height: 450px;
+          //height: 450px;
         }
 
         @include screen('mobile') {
-          height: 400px;
+          //height: 400px;
         }
       }
     }
 
     &__img {
       position: relative;
-      height: 680px;
+      min-height: 100%;
 
       @include screen('desktop') {
-        height: 550px;
+        min-height: 100%;
       }
 
       @include screen('laptop') {
-        height: 500px;
+        min-height: 500px;
       }
 
       @include screen('tablet') {
-        height: 450px;
+        min-height: 450px;
       }
 
       @include screen('mobile') {
-        height: 400px;
+        min-height: 400px;
       }
     }
 

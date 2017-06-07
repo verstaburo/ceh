@@ -32,7 +32,7 @@
 
     &__box {
       display: flex;
-      height: 680px;
+      min-height: 680px;
       width: 100%;
       margin: 65px 0;
 
@@ -41,21 +41,21 @@
       }
 
       @include screen('desktop') {
-        height: 530px;
+        min-height: auto;
       }
 
       @include screen('laptop') {
         flex-direction: column;
-        height: auto;
+        min-height: auto;
         margin: 20px 0;
       }
 
       @include screen('tablet') {
-        height: auto;
+        min-height: auto;
       }
 
       @include screen('mobile') {
-        height: auto;
+        min-height: auto;
       }
     }
 
@@ -218,10 +218,10 @@
 
     &__img {
       position: relative;
-      height: 680px;
+      min-height: 100%;
 
       @include screen('desktop') {
-        height: 530px;
+        min-height: 550px;
       }
 
       @include screen('laptop') {

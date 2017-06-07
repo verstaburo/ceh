@@ -12,6 +12,7 @@
     font-size: 16px;
 
     @include screen('mobile') {
+      font-size: 15px;
       letter-spacing: .05em;
     }
 
