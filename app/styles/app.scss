@@ -3,11 +3,13 @@
 @import 'helpers/fonts'; // Шрифты
 @import 'helpers/variables'; // Переменные
 @import 'helpers/basics'; // Основные общие стили
-@import '../blocks/**/*';
-@import '../components/**/*';
 @import '../pages/**/*';
+@import '../components/**/*';
+@import '../blocks/**/*';
 
 .container {
   width: $container-width;
   margin: 0 auto;
 }
+
+body { overflow: hidden; }

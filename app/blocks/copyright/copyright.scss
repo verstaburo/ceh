@@ -20,6 +20,10 @@
       text-transform: uppercase;
       letter-spacing: .2em;
 
+      @include screen('mobile') {
+        font-size: 13px;
+      }
+
       &:first-child {
         margin-right: 11px;
       }

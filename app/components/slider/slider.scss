@@ -7,15 +7,15 @@
   }
 
   @include screen('laptop') {
-    //height: 435px;
+    height: 435px;
   }
 
   @include screen('tablet') {
-    //height: 315px;
+    height: 315px;
   }
 
   @include screen('mobile') {
-    //height: 210px;
+    height: 210px;
   }
 
   &__img {
@@ -53,7 +53,7 @@
   }
 
   @include screen('desktop') {
-    margin-right: 0 !important;
+    margin-right: 0;
   }
 }
 

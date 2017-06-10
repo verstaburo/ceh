@@ -31,7 +31,7 @@
       }
 
       @include screen('desktop') {
-        min-height: 550px;
+        min-height: 450px;
       }
 
       @include screen('laptop') {
@@ -41,17 +41,17 @@
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 400px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
     }
 
     .box_reverse {
       @include screen('laptop') {
-        flex-direction: column !important;
+        flex-direction: column;
       }
     }
 
@@ -64,15 +64,15 @@
       }
 
       @include screen('laptop') {
-        min-height: 500px;
+        min-height: 400px;
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 300px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
     }
 
@@ -85,7 +85,7 @@
       padding: 0 130px;
 
       @include screen('desktop') {
-        padding: 0 15px;
+        padding: 0 30px;
       }
 
       @include screen('laptop') {
@@ -110,6 +110,14 @@
       font-family: $futura-light;
       color: $color-light-black;
       line-height: 1.708;
+
+      @include screen('desktop') {
+        font-size: 20px;
+      }
+
+      @include screen('mobile') {
+        font-size: 16px;
+      }
     }
   }
 }

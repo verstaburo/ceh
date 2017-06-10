@@ -5,9 +5,32 @@
     .navbar {
       padding: 65px 130px 0;
       flex-direction: column;
+      display: block;
+
+      @include clearfix;
+
+      @include screen('large-desktop') {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      @include screen('laptop') {
+        padding-top: 20px;
+        padding-bottom: 0;
+      }
+
+      @include screen('mobile') {
+        padding: 20px 15px 0;
+      }
 
       &__item {
         padding: 20px 0;
+        float: left;
+        clear: left;
+
+        @include screen('mobile') {
+          padding: 10px 0;
+        }
       }
     }
   }

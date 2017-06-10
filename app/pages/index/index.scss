@@ -39,41 +39,37 @@
       margin: 65px 0;
 
       @include screen('desktop') {
-        min-height: 550px;
+        min-height: 500px;
       }
 
       @include screen('laptop') {
-        flex-direction: column-reverse;
-        min-height: 500px;
+        flex-direction: column-reverse !important;
+        min-height: 0px;
         margin: 20px 0;
       }
 
-      @include screen('tablet') {
-        min-height: 450px;
-      }
-
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: none;
       }
     }
 
     &__map {
-      height: 680px;
+      min-height: 680px;
 
       @include screen('desktop') {
-        height: 550px;
+        min-height: 500px;
       }
 
       @include screen('laptop') {
-        height: 500px;
+        min-height: 400px;
       }
 
       @include screen('tablet') {
-        height: 450px;
+        min-height: 350px;
       }
 
       @include screen('mobile') {
-        height: 400px;
+        min-height: 250px;
       }
     }
 
@@ -86,15 +82,15 @@
       }
 
       @include screen('laptop') {
-        min-height: 500px;
+        min-height: 400px;
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 350px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 200px;
       }
     }
 

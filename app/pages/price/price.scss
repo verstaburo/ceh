@@ -25,6 +25,10 @@
     letter-spacing: .2em;
     width: 25%;
     text-align: center;
+
+    @include screen('desktop') {
+      font-size: 20px;
+    }
   }
 
   &__box {
@@ -34,6 +38,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @include screen('desktop') {
+      padding: 40px 0;
+    }
 
     @include screen('laptop') {
       display: none;
@@ -58,6 +66,10 @@
         color: $color-light-black;
         line-height: 1.367;
         letter-spacing: .15em;
+
+        @include screen('desktop') {
+          font-size: 20px;
+        }
       }
     }
 
@@ -77,6 +89,11 @@
         line-height: 1.367;
         letter-spacing: .15em;
         padding: 40px 0;
+
+        @include screen('desktop') {
+          font-size: 20px;
+          padding: 20px 0;
+        }
       }
     }
 
@@ -100,6 +117,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include screen('desktop') {
+          font-size: 25px;
+          padding: 20px 0;
+        }
       }
     }
 
@@ -122,6 +144,14 @@
         line-height: 1.045;
         letter-spacing: .05em;
         padding-bottom: 25px;
+
+        @include screen('desktop') {
+          font-size: 20px;
+        }
+
+        @include screen('mobile') {
+          font-size: 16px;
+        }
 
         &:last-child {
           padding-bottom: 0;
@@ -161,7 +191,7 @@
 
   .box__hidden {
     padding-top: 0;
-    padding-bottom: 0 !important;
+    padding-bottom: 0;
     display: none;
 
     @include screen('laptop') {

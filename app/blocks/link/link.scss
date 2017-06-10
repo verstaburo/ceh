@@ -5,19 +5,19 @@
   padding: 65px 125px;
 
   @include screen('desktop') {
-    padding: 60px 100px;
+    padding: 60px 30px;
   }
 
   @include screen('laptop') {
-    padding: 55px;
+    padding: 35px 30px;
   }
 
   @include screen('tablet') {
-    padding: 45px 15px;
+    padding: 25px 15px;
   }
 
   @include screen('mobile') {
-    padding: 40px 15px;
+    padding: 10px 15px;
   }
 
   &__link-left {

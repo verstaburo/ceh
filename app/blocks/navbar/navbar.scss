@@ -18,7 +18,7 @@
     }
 
     @include screen('desktop') {
-      margin-right: 0 !important;
+      margin-right: 0;
     }
 
     &:last-child {
@@ -35,6 +35,10 @@
     text-decoration: none;
     position: relative;
     display: block;
+
+    @media (max-width: 400px) {
+      font-size: 14px;
+    }
 
     &::after {
       content: '';

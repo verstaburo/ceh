@@ -5,11 +5,23 @@
     margin-bottom: 30px;
   }
 
+  @media (max-width: 400px) {
+    display: block;
+    text-align: center;
+  }
+
   p {
     display: inline-flex;
     color: #999;
     letter-spacing: .128em;
     font-size: 16px;
+
+    @media (max-width: 400px) {
+      justify-content: center;
+      width: 100%;
+
+      &:not(:first-child) { margin-top: 10px; }
+    }
 
     @include screen('mobile') {
       font-size: 15px;
@@ -26,6 +38,10 @@
 
       @include screen('laptop') {
         margin: 0 10px;
+      }
+
+      @media (max-width: 400px) {
+        display: none;
       }
     }
   }

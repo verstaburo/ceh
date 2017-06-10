@@ -45,6 +45,10 @@
         font-family: $futura-bold;
         color: $color-light-grey;
         line-height: .68;
+
+        @include screen('desktop') {
+          font-size: 300px;
+        }
       }
     }
 
@@ -66,6 +70,14 @@
       font-family: $futura-light;
       color: $color-light-black;
       line-height: 1.619;
+
+      @include screen('desktop') {
+        font-size: 19px;
+      }
+
+      @include screen('mobile') {
+        font-size: 16px;
+      }
 
       span {
         font-family: $futura-medium;

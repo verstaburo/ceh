@@ -58,19 +58,19 @@
       width: 100%;
 
       @include screen('desktop') {
-        min-height: 550px;
-      }
-
-      @include screen('laptop') {
-        min-height: 500px;
-      }
-
-      @include screen('tablet') {
         min-height: 450px;
       }
 
+      @include screen('laptop') {
+        min-height: 350px;
+      }
+
+      @include screen('tablet') {
+        min-height: 300px;
+      }
+
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
 
       .grid__img {
@@ -104,15 +104,15 @@
       }
 
       @include screen('laptop') {
-        min-height: 500px;
+        min-height: 400px;
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 350px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
     }
 
@@ -162,6 +162,10 @@
         margin-top: 40px;
         padding: 0 25px;
         max-width: inherit;
+      }
+
+      @include screen('mobile') {
+        font-size: 20px;
       }
     }
 

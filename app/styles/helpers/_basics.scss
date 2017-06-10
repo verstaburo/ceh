@@ -35,11 +35,11 @@ input, textarea {
 ########## */
 
 input:-webkit-autofill {
-  -webkit-text-fill-color: $color-input !important; // Поменять цвет на аналогичный цвету input
+  -webkit-text-fill-color: $color-input; // Поменять цвет на аналогичный цвету input
 }
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
-  transition: background-color 50000000000s ease-in-out 0s !important; // Убираем желтую заливку для автозаполнения в Chrome
+  transition: background-color 50000000000s ease-in-out 0s; // Убираем желтую заливку для автозаполнения в Chrome
 }
 
 /* ##########

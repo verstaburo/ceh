@@ -7,15 +7,22 @@
   margin-top: 65px;
 
   @include screen('large-desktop') {
-    padding: 75px 100px 85px;
+    padding: 75px 30px 85px;
   }
 
   @include screen('desktop') {
-    padding: 55px 15px !important;
+    padding: 55px 30px;
   }
 
   @include screen('laptop') {
     margin-top: 20px;
+  }
+
+  @include screen('mobile') {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
   }
 
   &__logo {
@@ -33,6 +40,10 @@
       align-items: center;
       display: flex;
       flex-direction: column-reverse;
+    }
+
+    @include screen('mobile') {
+      margin-top: 30px;
     }
 
     .footer__socials {
@@ -63,11 +74,16 @@
           padding-bottom: 0;
         }
       }
+
+      @media (max-width: 400px) {
+        padding: 10px 0;
+      }
     }
 
     &__link {
       color: $color-grey;
       transition: color .25s ease-in-out;
+      text-align: center;
 
       &:hover {
         color: $color-light-black;

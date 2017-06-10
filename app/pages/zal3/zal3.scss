@@ -40,16 +40,16 @@
 
       @include screen('laptop') {
         flex-direction: column;
-        min-height: 500px;
+        min-height: 400px;
         margin: 20px 0;
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 350px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
     }
 
@@ -104,15 +104,15 @@
       }
 
       @include screen('laptop') {
-        min-height: 500px;
+        min-height: 350px;
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 300px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
     }
 
@@ -155,6 +155,7 @@
       @include screen('desktop') {
         max-width: inherit;
         width: 100%;
+        font-size: 20px;
       }
 
       @include screen('laptop') {
@@ -162,6 +163,10 @@
         margin-top: 40px;
         padding: 0 25px;
         max-width: inherit;
+      }
+
+      @include screen('mobile') {
+        font-size: 16px;
       }
     }
   }

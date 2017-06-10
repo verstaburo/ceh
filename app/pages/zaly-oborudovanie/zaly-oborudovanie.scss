@@ -31,21 +31,21 @@
       }
 
       @include screen('desktop') {
-        min-height: 550px;
+        min-height: 450px;
       }
 
       @include screen('laptop') {
         flex-direction: column-reverse;
-        min-height: 500px;
+        min-height: 400px;
         margin: 20px 0;
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 350px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
     }
 
@@ -64,15 +64,15 @@
       }
 
       @include screen('laptop') {
-        min-height: 500px;
+        min-height: 400px;
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 350px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
     }
 
@@ -108,6 +108,14 @@
       margin-top: 60px;
       text-align: center;
       width: 100%;
+
+      @include screen('desktop') {
+        font-size: 20px;
+      }
+
+      @include screen('mobile') {
+        font-size: 16px;
+      }
     }
 
     &__content-zone ul {
@@ -121,6 +129,14 @@
       font-family: $futura-light;
       color: $color-light-black;
       line-height: 1.708;
+
+      @include screen('desktop') {
+        font-size: 20px;
+      }
+
+      @include screen('mobile') {
+        font-size: 16px;
+      }
     }
 
     .title_border {
@@ -142,8 +158,12 @@
       text-decoration: none;
       letter-spacing: .15em;
 
+      @include screen('desktop') {
+        font-size: 22px;
+      }
+
       @include screen('mobile') {
-        font-size: 21px;
+        font-size: 16px;
       }
 
       &:hover {

@@ -35,21 +35,21 @@
       }
 
       @include screen('desktop') {
-        min-height: 550px;
+        min-height: 450px;
       }
 
       @include screen('laptop') {
         flex-direction: column;
-        min-height: 500px;
+        min-height: 400px;
         margin: 20px 0;
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 350px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
     }
 
@@ -104,15 +104,15 @@
       }
 
       @include screen('laptop') {
-        min-height: 500px;
+        min-height: 400px;
       }
 
       @include screen('tablet') {
-        min-height: 450px;
+        min-height: 300px;
       }
 
       @include screen('mobile') {
-        min-height: 400px;
+        min-height: 250px;
       }
     }
 
