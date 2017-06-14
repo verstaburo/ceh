@@ -8,5 +8,6 @@ export default () => {
     speed: 400,
     autoplay: 5000,
     initialSlide: 1,
+    effect: 'fade'
   });
 };

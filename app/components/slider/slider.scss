@@ -81,6 +81,38 @@
   width: 100%;
   height: 100%;
   position: relative;
+
+  @include screen('laptop', min) {
+  opacity: 1 !important;
+  z-index: 1;
+
+  .image-bg {
+    width: 0;
+    transition: width 1s cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+    &__img {
+      transform: translate3d(-10%, 0, 0);
+      transition: transform 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s, -webkit-transform 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+    }
+
+    @include performance;
+  }
+
+  &-active {
+    z-index: 2;
+
+    .image-bg {
+      transition: width 1s cubic-bezier(0.19, 1, 0.22, 1);
+      width: 100%;
+
+      &__img {
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+    }
+  }
+
+  }
 }
 
 .swiper-pagination {

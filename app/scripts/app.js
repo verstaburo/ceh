@@ -12,4 +12,16 @@ $(() => {
   mainSlider();
   svg4everybody();
   header();
+
+  function sliderHeight() {
+    $(".main-slider").each(function(){
+      $(this).height( $(window).innerHeight() - $(this).offset().top );
+    });
+  }
+
+  sliderHeight();
+
+  $(window).resize(function(){
+    sliderHeight();
+  });
 });

@@ -59,14 +59,17 @@
     letter-spacing: .2em;
     text-transform: uppercase;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(-50%, -50%);
+    transform: translate3d(0, 0, 0);
+
+    @include performance;
 
     @include screen('desktop') {
       font-size: 24px;
@@ -88,6 +91,19 @@
       //transform: translate(-94px, -50%);
     }
   }
+
+  &:hover {
+
+    .square__corners_top:before { transform: translate3d(10px, -10px, 0); }
+
+    .square__corners_top:after { transform: translate3d(-10px, -10px, 0); }
+
+    .square__corners_bottom:before { transform: translate3d(10px, 10px, 0); }
+
+    .square__corners_bottom:after { transform: translate3d(-10px, 10px, 0); }
+  }
+
+  .square__corners_bottom:before, .square__corners_top:before, .square__corners_top:after, .square__corners_bottom:after  { transition: all .25s ease-in-out; }
 
   &__corners {
 
